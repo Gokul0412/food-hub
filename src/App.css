@@ -1,0 +1,19 @@
+.sideMenu :focus{
+    background-color: white;
+    color: rgb(31 170 89);
+    border-top-right-radius : 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: bolder;
+    
+}
+.sideMenu li{
+    margin-top: 1rem;
+  
+}
+
+.register{
+    background-image: url("../src/assets/images/restaurant-cafe-menu-template-design-food-flyer-PERADC.jpg");
+    background-position: center;
+
+    background-size: contain ;
+}
