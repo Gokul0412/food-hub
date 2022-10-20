@@ -30,7 +30,7 @@ export default function Register() {
                 .max(10, "to long"),
             password: yup
                 .string()
-                .required ('Please Enter your password'  )
+                .required ('Please Enter your password')
                 .matches(passRegExp, "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"),
         }),
         onSubmit: (data) => {
@@ -39,7 +39,6 @@ export default function Register() {
             sessionStorage.setItem("email", data.email)
             sessionStorage.setItem("phonenumber", data.phonenumber)
         },
-
     });
 
     return (
@@ -56,7 +55,6 @@ export default function Register() {
                         noValidate
                         autoComplete="off"
                     >
-
                         <div style={{
                             border: "solid 1px #rgb(66 77 83)", display: "grid", backgroundColor: "inherit",
                             padding: "5rem 2rem 2rem 2rem", borderRadius: "10px", 
